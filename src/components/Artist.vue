@@ -1,5 +1,5 @@
 <template>
-    <div class="MainSection">
+    <div class="Artist">
         <img src="" alt="">
     </div>
 </template>
@@ -8,7 +8,7 @@
 
 <script>
 export default {
-  name: 'MainSection',
+  name: 'Artist'
 }
 </script>
 
@@ -17,8 +17,5 @@ export default {
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped lang="scss">
 
-.MainSection {
-    background-color: #1E2D3B;
-}
 
 </style>

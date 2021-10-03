@@ -1,14 +1,14 @@
 <template>
-    <div class="MainSection">
-        <img src="" alt="">
-    </div>
+    <section class="Album">
+            <img src="" alt="">
+    </section>
 </template>
 
 
 
 <script>
 export default {
-  name: 'MainSection',
+  name: 'Album'
 }
 </script>
 
@@ -17,8 +17,5 @@ export default {
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped lang="scss">
 
-.MainSection {
-    background-color: #1E2D3B;
-}
 
 </style>

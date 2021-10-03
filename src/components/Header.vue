@@ -17,8 +17,9 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped lang="scss">
+
 .Header {
-    background-color: rgb(76, 105, 122);
+    background-color: #2E3A46;
     height: 90px;
     display: flex;
     align-items: center;
@@ -29,10 +30,14 @@ export default {
     }
 
     h2 {
-       font-size: 30px;
-       color: beige;
-    }
+    font-size: 30px;
+    color: beige;
+    font-weight: 600;
+    margin-left: 40%;
+}
 
 }
+
+
 </style>
 
