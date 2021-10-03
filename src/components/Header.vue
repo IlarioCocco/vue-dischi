@@ -25,6 +25,8 @@ export default {
     height: 90px;
     display: flex;
     align-items: center;
+    position: fixed;
+    width: 100%;
 
     .logo {
         height: 60px;
