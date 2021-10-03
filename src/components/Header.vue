@@ -10,8 +10,6 @@
 <script>
 export default {
   name: 'Header'
-
- 
 }
 </script>
 
@@ -19,13 +17,11 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped lang="scss">
-
 .Header {
     background-color: rgb(76, 105, 122);
     height: 90px;
     display: flex;
     align-items: center;
-    position: fixed;
     width: 100%;
 
     .logo {
@@ -38,6 +34,5 @@ export default {
     }
 
 }
-
 </style>
 

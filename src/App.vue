@@ -1,7 +1,7 @@
 <template>
   <div id="app">
     <Header/>
-    <MainSectionDischi/>
+    <MainSection/>
   </div>
 </template>
 
@@ -10,13 +10,13 @@
 
 <script>
 import Header from './components/Header.vue'
-import MainSectionDischi from './components/MainSectionDischi.vue'
+import MainSection from './components/MainSection.vue'
 
 export default {
   name: 'App',
   components: {
     Header,
-    MainSectionDischi
+    MainSection
   }
 }
 </script>
@@ -26,5 +26,4 @@ export default {
 // importazione
 <style lang="scss">
 @import "./assets/scss/common.scss";
-
 </style>
