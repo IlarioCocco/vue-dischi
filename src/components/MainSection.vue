@@ -1,6 +1,7 @@
 <template>
 <div class="MainSection">
-    <div class="Album">
+    <div class="section">
+
         <div class="square">
             <img class="square-img" src="https://www.onstageweb.com/wp-content/uploads/2018/09/bon-jovi-new-jersey.jpg" alt="">
             <div class="titolo-album">
@@ -8,6 +9,47 @@
                 <p>Bon Jovi <br>1988</p>
             </div>
         </div>
+
+        <div class="square">
+            <img class="square-img" src="https://www.onstageweb.com/wp-content/uploads/2018/09/bon-jovi-new-jersey.jpg" alt="">
+            <div class="titolo-album">
+                <h4 class="titolo-album">new jersey</h4>
+                <p>Bon Jovi <br>1988</p>
+            </div>
+        </div>
+
+        <div class="square">
+            <img class="square-img" src="https://www.onstageweb.com/wp-content/uploads/2018/09/bon-jovi-new-jersey.jpg" alt="">
+            <div class="titolo-album">
+                <h4 class="titolo-album">new jersey</h4>
+                <p>Bon Jovi <br>1988</p>
+            </div>
+        </div>
+
+         <div class="square">
+            <img class="square-img" src="https://www.onstageweb.com/wp-content/uploads/2018/09/bon-jovi-new-jersey.jpg" alt="">
+            <div class="titolo-album">
+                <h4 class="titolo-album">new jersey</h4>
+                <p>Bon Jovi <br>1988</p>
+            </div>
+        </div>
+
+        <div class="square">
+            <img class="square-img" src="https://www.onstageweb.com/wp-content/uploads/2018/09/bon-jovi-new-jersey.jpg" alt="">
+            <div class="titolo-album">
+                <h4 class="titolo-album">new jersey</h4>
+                <p>Bon Jovi <br>1988</p>
+            </div>
+        </div>
+
+        <div class="square">
+            <img class="square-img" src="https://www.onstageweb.com/wp-content/uploads/2018/09/bon-jovi-new-jersey.jpg" alt="">
+            <div class="titolo-album">
+                <h4 class="titolo-album">new jersey</h4>
+                <p>Bon Jovi <br>1988</p>
+            </div>
+        </div>
+
     </div>
 </div>
     
@@ -31,7 +73,7 @@ export default {
     background-color: #1E2D3B;
 }
 
-.Album {
+.section {
     background-color: #1E2D3B;
     padding-top: 150px;
     display: flex;

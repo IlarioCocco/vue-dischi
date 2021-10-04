@@ -1,7 +1,6 @@
 <template>
     <section class="Album">
-        <Album/>
-       
+      
     </section>
 </template>
 
