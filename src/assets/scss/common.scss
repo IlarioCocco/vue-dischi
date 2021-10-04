@@ -1,6 +1,12 @@
+// importo Bootstrap
 @import "~bootstrap/scss/bootstrap";
+
+//importo i Fonts
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap'); 
+
 // iporto variabili
 @import "./assets/scss/variables.scss";
+
 
 // Reset
 * {
@@ -11,8 +17,11 @@
 
 
 // Body
+// Google font
 body {
-    font-family: Roboto, sans-serif;
+    font-family: $mainFont;
+    background: #1E2D3B;
+    
 }
 
 
@@ -23,7 +32,7 @@ body {
 
 
 // MainSection
-.MainSection {
+.section, .MainSection {
     height: 100vh;
 }
 

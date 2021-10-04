@@ -1,7 +1,7 @@
 <template>
     <div class="Header">
         <img class="logo" src="../assets/img/spotify-logo.png" alt="logo Spotify">
-        <h2>Spotify</h2>
+        <h2>{{title}}</h2>
     </div>
 </template>
 
@@ -9,7 +9,8 @@
 
 <script>
 export default {
-  name: 'Header'
+  name: 'Header',
+  props: ['title']
 }
 </script>
 
@@ -33,7 +34,8 @@ export default {
     font-size: 30px;
     color: beige;
     font-weight: 600;
-    margin-left: 40%;
+    margin-left: 43%;
+    // text-align: center;
 }
 
 }

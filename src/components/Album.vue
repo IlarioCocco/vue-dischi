@@ -1,6 +1,6 @@
 <template>
     <section class="Album">
-            <img src="" alt="">
+       
     </section>
 </template>
 

@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <Header/>
+    <Header title="Spotify"/>
     <MainSection/>
     <Album/>
     <Artist/>
@@ -35,4 +35,5 @@ export default {
 // importazione
 <style lang="scss">
 @import "./assets/scss/common.scss";
+@import "~bootstrap/scss/bootstrap";
 </style>
