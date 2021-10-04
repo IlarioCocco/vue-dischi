@@ -14,10 +14,10 @@
 // IMPORTARE
 // REGISTRARE
 <script>
-import Header from './components/Header.vue'
-import MainSection from './components/MainSection.vue'
-import Album from './components/Album.vue'
-import Artist from './components/Artist.vue'
+import Header from './components/Header.vue';
+import MainSection from './components/MainSection.vue';
+import Album from './components/Album.vue';
+import Artist from './components/Artist.vue';
 
 export default {
   name: 'App',

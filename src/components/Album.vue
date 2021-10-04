@@ -1,5 +1,6 @@
 <template>
     <section class="Album">
+        <Album/>
        
     </section>
 </template>
@@ -7,6 +8,7 @@
 
 
 <script>
+
 export default {
   name: 'Album'
 }
