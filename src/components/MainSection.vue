@@ -5,8 +5,8 @@
             <img class="square-img" src="https://www.onstageweb.com/wp-content/uploads/2018/09/bon-jovi-new-jersey.jpg" alt="">
             <div class="titolo-album">
                 <h4 class="titolo-album">new jersey</h4>
-                <p>Bon Jovi</p>
-                <p>1980</p>
+                <p>Bon Jovi <br>1988</p>
+               
             </div>
         </div>
 
@@ -51,7 +51,7 @@ export default {
 
         .square {
         height: 300px;
-        background-color: rgba(133, 133, 133, 0.438);
+        background-color: rgba(92, 92, 92, 0.288);
         display: flex;
         flex-wrap: wrap;
         width: calc(20% - 10px);
