@@ -1,15 +1,14 @@
 <template>
     <main>
         <section>
-
-            <div class="square" v-for="(todo, i) in dischi" :key="i">
+            <!-- <div class="square" v-for="(todo, i) in dischi" :key="i">
                 <img class="img" :src="todo.poster" alt="">
                 <div class="titolo">
                     <h4 class="album">{{todo.title}}</h4>
                     <p class="artist">{{todo.author}}<br>{{todo.year}}</p>
                 </div>
-            </div>
-
+            </div> -->
+        <Disco v-for="(todo, i) in dischi" :key="i" :disco="todo"/>
         </section>
     </main>
 </template>
@@ -20,10 +19,21 @@
 
 
 <script>
+import Disco from '../components/Disco.vue'
+// import axios from 'axios';
 export default {
     name: 'Main',
+    
+    components: {
+        Disco
+    },
+
+
+
     data() {
         return {
+            // dischi: [],
+
                 dischi: [
                 {
                     poster: "https://www.onstageweb.com/wp-content/uploads/2018/09/bon-jovi-new-jersey.jpg",
@@ -110,6 +120,15 @@ export default {
                     year: 1988
                 },
             ]
+
+
+            // created() {
+            //     axios
+            //     .get("https://flynn.boolean.careers/exercises/api/array/music")
+            //     .then( (res)=> {
+            //         this.dischi = res.data;
+            //     } );
+            // }
         }
     }
 }
@@ -136,36 +155,36 @@ section {
     margin:auto;
     border: 5px solid rgba(23, 201, 0, 0);
 
-        .square {
-            padding: 10px 10px 25px 10px;
-            display: flex;
-            flex-wrap: wrap;
-            width: calc(100% / 2 - 20px);
-            margin: 10px;
-            justify-content: center;
-            border: 1px solid rgb(248, 178, 0);
+//         .square {
+//             padding: 10px 10px 25px 10px;
+//             display: flex;
+//             flex-wrap: wrap;
+//             width: calc(100% / 2 - 20px);
+//             margin: 10px;
+//             justify-content: center;
+//             border: 1px solid rgb(248, 178, 0);
 
-        .img {
-            width: 100%;
-            padding: 0px 0px 10px 0px; 
-        }
+//         .img {
+//             width: 100%;
+//             padding: 0px 0px 10px 0px; 
+//         }
 
-        .titolo {
-            text-align: center;
-            color: white;
-            // border: 5px solid rgba(255, 255, 255, 0.219);
-            max-width: 100%;
-        }
-    }
+//         .titolo {
+//             text-align: center;
+//             color: white;
+//             // border: 5px solid rgba(255, 255, 255, 0.219);
+//             max-width: 100%;
+//         }
+//     }
 
-    .album {
-        font-size: 20px;
-        color: rgb(248, 178, 0);
-    }
+//     .album {
+//         font-size: 20px;
+//         color: rgb(248, 178, 0);
+//     }
 
-   .artist {
-    color:grey;     
-    }
+//    .artist {
+//     color:grey;     
+//     }
 }
 
 
