@@ -7,7 +7,6 @@
 // iporto variabili
 @import "./assets/scss/variables.scss";
 
-
 // Reset
 * {
     margin: 0;
@@ -15,15 +14,11 @@
     box-sizing: border-box;
 }
 
-
 // Body
 // Google font
 body {
     font-family: $mainFont;
-    background: #1E2D3B;
-    
 }
-
 
 // Header
 .Header {
@@ -31,15 +26,5 @@ body {
 }
 
 
-// MainSection
-.section, .MainSection {
-    height: 100vh;
-}
-
-
-// debug exemple
-p {
-    color:grey;
-}
 
 
