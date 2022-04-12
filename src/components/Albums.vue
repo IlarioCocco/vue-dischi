@@ -2,18 +2,8 @@
     <main>
         <section>
             <div class="square" v-for="(todo, i) in musica" :key="i"> 
-               <img class="img" :src="todo.poster" alt="">
-                <div class="titolo">
-                    <h4 class="album">
-                        {{todo.title}}
-                    </h4>
-                    <p class="artist">
-                        {{todo.author}}<br>
-                        {{todo.year}}
-                    </p>
-                </div> 
+              <Album :albums="todo"/>
             </div>
-            <Album/>
         <!-- <Album v-for="(todo, i) in music" :key="i" :album="todo"/> -->
         </section>
     </main>

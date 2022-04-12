@@ -1,23 +1,23 @@
 <template>
-        <div class="square">
-            <img class="img" :src="album.poster" :alt="album.title">
-            <div class="titolo">
-                <h4 class="album">
-                    {{album.title}}
-                </h4>
-                <p class="artist">
-                    {{album.author}}<br>
-                    {{album.year}}
-                </p>
-            </div>
+    <div>
+        <img class="img" :src="albums.poster" :alt="albums.title">
+        <div class="titolo">
+            <h4 class="album">
+                {{albums.title}}
+            </h4>
+            <p class="artist">{{albums.author}}<br>
+                {{albums.year}}
+            </p>
         </div>
+    </div>
 </template>
 
 
 <script>
 export default {
     name: 'Album',
-    props: ['album']
+    props: ['album', 'albums']
+    // è possibile esportarlo anche come obj
 }
 </script>
 
