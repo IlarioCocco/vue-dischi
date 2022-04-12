@@ -17,7 +17,7 @@ export default {
 </script>
 
 
-<style scoped lang="scss">
+<style lang="scss">
 .square {
     background-color: #2762797e;
         padding: 5px 5px 45px 5px;
