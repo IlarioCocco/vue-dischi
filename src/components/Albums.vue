@@ -115,7 +115,7 @@ section {
 
         .square {
         padding: 10px 10px 25px 10px;
-        width: calc(100% / 3 - 20px);
+        width: calc(100% / 2 - 20px);
         margin: 10px;
         justify-content: center;
         // border: 1px solid rgb(248, 178, 0);
@@ -163,7 +163,7 @@ section {
 
         .square {
         padding: 10px 10px 25px 10px;
-        width: calc(100% / 4 - 20px);
+        width: calc(100% / 3 - 20px);
         margin: 10px;
         justify-content: center;
         // border: 1px solid rgb(248, 178, 0);
