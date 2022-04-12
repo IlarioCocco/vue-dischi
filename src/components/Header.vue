@@ -21,7 +21,7 @@ export default {
 
 <style scoped lang="scss">
 .header {
-    background-color: #af960650;
+    background-color: #112e388c;
     display: flex;
     align-items: center;
     justify-content: space-around;
@@ -37,7 +37,7 @@ export default {
 }
 
     .logo {
-    max-width: 100px;
+    max-width: 60px;
     padding: 20px 0px 20px 0px;
     margin-right: 20px;
     }
