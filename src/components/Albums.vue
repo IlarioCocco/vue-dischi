@@ -1,27 +1,24 @@
 <template>
     <main>
         <section>
-            <!-- <div class="square" v-for="(todo, i) in dischi" :key="i">
-                <img class="img" :src="todo.poster" alt="">
+            <div class="square" v-for="(todo, i) in musica" :key="i"> 
+               <img class="img" :src="todo.poster" alt="">
                 <div class="titolo">
                     <h4 class="album">{{todo.title}}</h4>
                     <p class="artist">{{todo.author}}<br>{{todo.year}}</p>
-                </div>
-            </div> -->
-        <Album v-for="(todo, i) in music" :key="i" :album="todo"/>
+                </div> 
+            </div>
+        <!-- <Album v-for="(todo, i) in music" :key="i" :album="todo"/> -->
+        <Album/>
         </section>
     </main>
 </template>
 
 
-
-
-
-
 <script>
-// import axios from 'axios';
+import axios from 'axios';
 import Album from '../components/Album.vue';
-import prods from '../data/music.json';
+// import prods from '../data/music.json';
 
 export default {
     name: "Albums",
@@ -31,17 +28,20 @@ export default {
 
     data() {
         return {
-            // music: [],
-            music: prods,
+            // music: prods,
+            musica: []
         }
+    },
+
+    created() {
+        axios.get("https://flynn.boolean.careers/exercises/api/array/music")
+        .then( (res) => {
+            console.log(res)
+            this.musica = res.data.response;
+        })
     }
-}
+}    
 </script>
-
-
-
-
-
 
 
 <style scoped lang="scss">
@@ -92,9 +92,6 @@ section {
 }
 
 
-
-
-
 //-------------------RESPONSIVE---------------------//
 // responsive SMALL SM
 @media screen and (min-width: 576px) {
@@ -114,7 +111,7 @@ section {
         border: 5px solid rgba(23, 201, 0, 0);
 
         .square {
-        padding: 10px 10px 25px 10px;
+        padding: 5px 5px 45px 5px;
         width: calc(100% / 2 - 20px);
         margin: 10px;
         justify-content: center;
@@ -162,7 +159,7 @@ section {
         border: 5px solid rgba(23, 201, 0, 0);
 
         .square {
-        padding: 10px 10px 25px 10px;
+        padding: 5px 5px 45px 5px;
         width: calc(100% / 3 - 20px);
         margin: 10px;
         justify-content: center;
@@ -210,7 +207,7 @@ section {
         border: 5px solid rgba(23, 201, 0, 0);
 
         .square {
-        padding: 10px 10px 25px 10px;
+        padding: 5px 5px 45px 5px;
         width: calc(100% / 5 - 20px);
         margin: 10px;
         justify-content: center;

@@ -9,20 +9,6 @@
 </template>
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 <script>
 export default {
     name: 'Album',
@@ -31,29 +17,16 @@ export default {
 </script>
 
 
-
-
-
-
-
-
-
-
-
-
-
-
 <style scoped lang="scss">
-
 .square {
     background-color: #2762797e;
-        padding: 10px 10px 25px 10px;
+        padding: 5px 5px 45px 5px;
         display: flex;
         flex-wrap: wrap;
         width: calc(100% / 1 - 20px);
         margin: 10px;
         justify-content: center;
-        // border: 1px solid rgb(248, 178, 0);
+        border: 5px solid hsla(196, 53%, 14%, 0.24);
 
     .img {
         width: 100%;
@@ -78,5 +51,4 @@ export default {
 .artist {
 color:rgb(87, 87, 87);     
 }
-
 </style>
