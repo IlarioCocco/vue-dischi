@@ -4,12 +4,17 @@
             <div class="square" v-for="(todo, i) in musica" :key="i"> 
                <img class="img" :src="todo.poster" alt="">
                 <div class="titolo">
-                    <h4 class="album">{{todo.title}}</h4>
-                    <p class="artist">{{todo.author}}<br>{{todo.year}}</p>
+                    <h4 class="album">
+                        {{todo.title}}
+                    </h4>
+                    <p class="artist">
+                        {{todo.author}}<br>
+                        {{todo.year}}
+                    </p>
                 </div> 
             </div>
+            <Album/>
         <!-- <Album v-for="(todo, i) in music" :key="i" :album="todo"/> -->
-        <Album/>
         </section>
     </main>
 </template>
@@ -132,7 +137,7 @@ section {
 
         .album {
             font-size: 20px;
-            color: rgb(248, 178, 0);
+            color: rgb(223, 223, 223);
         }
 
     .artist {
@@ -180,7 +185,7 @@ section {
 
         .album {
             font-size: 20px;
-             color: rgb(248, 178, 0);
+            color: rgb(223, 223, 223);
         }
 
     .artist {
@@ -228,7 +233,7 @@ section {
 
         .album {
             font-size: 20px;
-            color: rgb(248, 178, 0);
+            color: rgb(223, 223, 223);
         }
 
     .artist {

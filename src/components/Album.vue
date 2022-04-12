@@ -2,8 +2,13 @@
         <div class="square">
             <img class="img" :src="album.poster" :alt="album.title">
             <div class="titolo">
-                <h4 class="album">{{album.title}}</h4>
-                <p class="artist">{{album.author}}<br>{{album.year}}</p>
+                <h4 class="album">
+                    {{album.title}}
+                </h4>
+                <p class="artist">
+                    {{album.author}}<br>
+                    {{album.year}}
+                </p>
             </div>
         </div>
 </template>
