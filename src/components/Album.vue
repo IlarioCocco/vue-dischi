@@ -22,30 +22,19 @@ export default {
 </script>
 
 
-<style lang="scss">
-.square {
-    background-color: #2762797e;
-        padding: 5px 5px 45px 5px;
-        display: flex;
-        flex-wrap: wrap;
-        width: calc(100% / 1 - 20px);
-        margin: 10px;
-        justify-content: center;
-        border: 5px solid hsla(196, 53%, 14%, 0.24);
+<style scoped lang="scss">
+.img {
+    width: 100%;
+    padding: 0px 0px 10px 0px; 
+    // position: relative;
+    // clip-path: inset(0% 0% 0% 0%);
+}
 
-    .img {
-        width: 100%;
-        padding: 0px 0px 10px 0px; 
-        // position: relative;
-        // clip-path: inset(0% 0% 0% 0%);
-    }
-
-    .titolo {
-        text-align: center;
-        color: white;
-        // border: 5px solid rgba(255, 255, 255, 0.219);
-        max-width: 100%;
-    }
+.titolo {
+    text-align: center;
+    color: white;
+    // border: 5px solid rgba(255, 255, 255, 0.219);
+    max-width: 100%;
 }
 
 .album {
@@ -57,3 +46,4 @@ export default {
 color:rgb(87, 87, 87);     
 }
 </style>
+

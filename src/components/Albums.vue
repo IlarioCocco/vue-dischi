@@ -41,9 +41,8 @@ export default {
 
 <style scoped lang="scss">
 main {
-    // height: 100vh;
     padding: 0px 0px 50px 0px;
-    border: 5px solid #da4b4b00;
+    // border: 5px solid hsl(196, 53%, 14%);
 }
 
 section {
@@ -52,49 +51,28 @@ section {
     flex-wrap: wrap;
     max-width: 80%;
     margin:auto;
-    border: 5px solid rgba(23, 201, 0, 0);
+    // border: 5px solid hsla(196, 53%, 14%, 0.486);
 
-//         .square {
-//             padding: 10px 10px 25px 10px;
-//             display: flex;
-//             flex-wrap: wrap;
-//             width: calc(100% / 2 - 20px);
-//             margin: 10px;
-//             justify-content: center;
-//             border: 1px solid rgb(248, 178, 0);
-
-//         .img {
-//             width: 100%;
-//             padding: 0px 0px 10px 0px; 
-//         }
-
-//         .titolo {
-//             text-align: center;
-//             color: white;
-//             // border: 5px solid rgba(255, 255, 255, 0.219);
-//             max-width: 100%;
-//         }
-//     }
-
-//     .album {
-//         font-size: 20px;
-//         color: rgb(248, 178, 0);
-//     }
-
-//    .artist {
-//     color:grey;     
-//     }
+    .square {
+        background-color: #2762797e;
+        padding: 5px 5px 45px 5px;
+        display: flex;
+        flex-wrap: wrap;
+        width: calc(100% / 1 - 20px);
+        margin: 10px;
+        justify-content: center;
+        border: 5px solid hsla(196, 53%, 14%, 0.116);
+    }
 }
 
 
-//-------------------RESPONSIVE---------------------//
+//-------------------RESPONSIVE WITHOUT FRAMEWORK---------------------//
 // responsive SMALL SM
 @media screen and (min-width: 576px) {
 
     main {
-    // height: 200vh;
     padding: 0px 0px 50px 0px;
-    border: 5px solid #da4b4b00;
+    // border: 5px solid hsl(196, 53%, 14%);
 }
 
     section {
@@ -103,14 +81,14 @@ section {
         flex-wrap: wrap;
         max-width: 80%;
         margin:auto;
-        border: 5px solid rgba(23, 201, 0, 0);
+        // border: 5px solid hsla(196, 53%, 14%, 0.486);
 
         .square {
         padding: 5px 5px 45px 5px;
         width: calc(100% / 2 - 20px);
         margin: 10px;
         justify-content: center;
-        // border: 1px solid rgb(248, 178, 0);
+        border: 5px solid hsla(196, 53%, 14%, 0.116);
 
             .img {
                 width: 100%;
@@ -140,9 +118,8 @@ section {
 @media screen and (min-width: 768px) {
 
     main {
-    // height: 200vh;
     padding: 0px 0px 50px 0px;
-    border: 5px solid #da4b4b00;
+    // border: 5px solid hsl(196, 53%, 14%);
 }
 
     section {
@@ -151,14 +128,14 @@ section {
         flex-wrap: wrap;
         max-width: 80%;
         margin:auto;
-        border: 5px solid rgba(23, 201, 0, 0);
+        // border: 5px solid hsla(196, 53%, 14%, 0.486);
 
         .square {
         padding: 5px 5px 45px 5px;
         width: calc(100% / 3 - 20px);
         margin: 10px;
         justify-content: center;
-        // border: 1px solid rgb(248, 178, 0);
+        border: 5px solid hsla(196, 53%, 14%, 0.116);
 
             .img {
                 width: 100%;
@@ -188,9 +165,8 @@ section {
 @media screen and (min-width: 992px) {
     
     main {
-    // height: 200vh;
     padding: 0px 0px 50px 0px;
-    border: 5px solid #da4b4b00;
+    // border: 5px solid hsl(196, 53%, 14%);
 }
 
     section {
@@ -199,14 +175,14 @@ section {
         flex-wrap: wrap;
         max-width: 80%;
         margin:auto;
-        border: 5px solid rgba(23, 201, 0, 0);
+        // border: 5px solid hsla(196, 53%, 14%, 0.486);
 
         .square {
         padding: 5px 5px 45px 5px;
         width: calc(100% / 5 - 20px);
         margin: 10px;
         justify-content: center;
-        // border: 1px solid rgb(248, 178, 0);
+        border: 5px solid hsla(196, 53%, 14%, 0.116);
 
             .img {
                 width: 100%;
@@ -232,9 +208,3 @@ section {
     }
 }
 </style>
-
-
-
-
-
-
