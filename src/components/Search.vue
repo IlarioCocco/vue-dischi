@@ -2,7 +2,8 @@
     <main>
         <div class="box">
             <button class="buttonUno">search</button>
-            <input class="ricerca" type="text" placeholder="Searh Genre" v-model="searchGenre">
+            <input class="ricerca" type="text" placeholder="Searh Genre" v-model="searchGenre"
+            @keyup.enter="$emit('franco', searchGenre)">
             <button class="buttonDue">reset</button>
         </div>
     </main>
@@ -37,7 +38,7 @@ export default {
     // top: 10%;
     // left: 30%;
     // transform: translate(-50%, -50%);
-    border: none;
+    border: 3px solid rgb(255, 255, 255);
     border-radius: 5px;
     color: white;
     background-color: rgb(153, 213, 153);
@@ -49,7 +50,7 @@ export default {
 
     &:hover.buttonUno {
         background-color: rgb(72, 183, 109);
-        border: 1px solid rgb(0, 88, 22);
+        border: 2px solid rgb(0, 88, 22);
         font-weight: bold;
         // text-transform: uppercase;
     }
@@ -61,7 +62,7 @@ export default {
 
     &:hover.buttonDue {
         background-color: rgb(98, 160, 215);
-        border: 1px solid rgb(0, 20, 133);
+        border: 2px solid rgb(0, 20, 133);
         font-weight: bold;
         // text-transform: uppercase;
     }
