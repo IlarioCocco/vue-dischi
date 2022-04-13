@@ -2,6 +2,7 @@
   <div id="app">
     <Header title="Spotify"/>
     <Albums/>
+    <Footer/>
   </div>
 </template>
 // USARE
@@ -15,11 +16,13 @@
 // REGISTRARE
 import Header from './components/Header.vue';
 import Albums from './components/Albums.vue';
+import Footer from './components/Footer.vue';
 export default {
   name: 'App',
   components: {
     Header,
-    Albums
+    Albums,
+    Footer
   }
 }
 </script>
