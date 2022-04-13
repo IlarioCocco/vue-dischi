@@ -18,6 +18,7 @@ export default {
     name: 'Album',
     props: ['album', 'albums']
     // è possibile esportarlo anche come obj
+    // props: {albums: Object}
 }
 </script>
 

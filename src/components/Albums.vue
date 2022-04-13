@@ -1,11 +1,16 @@
 <template>
     <main>
-        <section>
+        <div>
+            <Search/>
+        </div>
+       
+        <section> 
             <div class="square" v-for="(todo, i) in musica" :key="i"> 
-              <Album :albums="todo"/>
+                <Album :albums="todo"/>
             </div>
         <!-- <Album v-for="(todo, i) in music" :key="i" :album="todo"/> -->
         </section>
+         <!-- <Search/> -->
     </main>
 </template>
 
@@ -13,12 +18,14 @@
 <script>
 import axios from 'axios';
 import Album from '../components/Album.vue';
+import Search from '../components/Search.vue';
 // import prods from '../data/music.json';
 
 export default {
     name: "Albums",
     components: {
-        Album
+        Album,
+        Search
     },
 
     data() {
@@ -41,27 +48,28 @@ export default {
 
 <style scoped lang="scss">
 main {
-    padding: 0px 0px 50px 0px;
+    padding: 0px 0px 0px 0px;
     // border: 5px solid hsl(196, 53%, 14%);
 }
 
 section {
-    padding: 120px 0px 10px 0px;  
+    // position: relative;
+    padding: 0px 0px 30px 0px;  
     display: flex;
     flex-wrap: wrap;
     max-width: 80%;
     margin:auto;
-    // border: 5px solid hsla(196, 53%, 14%, 0.486);
+    // border: 5px solid hsl(40, 100%, 50%);
 
     .square {
         background-color: #2762797e;
-        padding: 5px 5px 45px 5px;
+        padding: 5px 5px 5px 5px;
         display: flex;
         flex-wrap: wrap;
         width: calc(100% / 1 - 20px);
         margin: 10px;
         justify-content: center;
-        border: 5px solid hsla(196, 53%, 14%, 0.116);
+        border: 5px solid hsla(57, 53%, 14%, 0.116);
     }
 }
 
@@ -69,14 +77,17 @@ section {
 //-------------------RESPONSIVE WITHOUT FRAMEWORK---------------------//
 // responsive SMALL SM
 @media screen and (min-width: 576px) {
+    .box{
+    border: 1px solid green;
+}
 
     main {
-    padding: 0px 0px 50px 0px;
+    padding: 0px 0px 0px 0px;
     // border: 5px solid hsl(196, 53%, 14%);
 }
 
     section {
-        padding: 120px 0px 10px 0px;  
+        padding: 0px 0px 30px 0px;
         display: flex;
         flex-wrap: wrap;
         max-width: 80%;
@@ -84,7 +95,7 @@ section {
         // border: 5px solid hsla(196, 53%, 14%, 0.486);
 
         .square {
-        padding: 5px 5px 45px 5px;
+        padding: 5px 5px 5px 5px;
         width: calc(100% / 2 - 20px);
         margin: 10px;
         justify-content: center;
@@ -116,14 +127,17 @@ section {
 
 // responsive MEDIUM MD
 @media screen and (min-width: 768px) {
+    .box{
+    border: 1px solid green;
+}
 
     main {
-    padding: 0px 0px 50px 0px;
+    padding: 0px 0px 0px 0px;
     // border: 5px solid hsl(196, 53%, 14%);
 }
 
     section {
-        padding: 120px 0px 10px 0px;  
+        padding: 0px 0px 30px 0px;  
         display: flex;
         flex-wrap: wrap;
         max-width: 80%;
@@ -131,7 +145,7 @@ section {
         // border: 5px solid hsla(196, 53%, 14%, 0.486);
 
         .square {
-        padding: 5px 5px 45px 5px;
+        padding: 5px 5px 5px 5px;
         width: calc(100% / 3 - 20px);
         margin: 10px;
         justify-content: center;
@@ -163,14 +177,17 @@ section {
 
 // responsive LARGE XL
 @media screen and (min-width: 992px) {
+    .box{
+    border: 1px solid green;
+}
     
     main {
-    padding: 0px 0px 50px 0px;
+    padding: 0px 0px 0px 0px;
     // border: 5px solid hsl(196, 53%, 14%);
 }
 
     section {
-        padding: 120px 0px 10px 0px;      
+        padding: 0px 0px 30px 0px;    
         display: flex;
         flex-wrap: wrap;
         max-width: 80%;
@@ -178,7 +195,7 @@ section {
         // border: 5px solid hsla(196, 53%, 14%, 0.486);
 
         .square {
-        padding: 5px 5px 45px 5px;
+        padding: 5px 5px 5px 5px;
         width: calc(100% / 5 - 20px);
         margin: 10px;
         justify-content: center;

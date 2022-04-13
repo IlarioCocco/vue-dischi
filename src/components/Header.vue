@@ -24,10 +24,11 @@ export default {
     background-color: hsla(196, 53%, 14%, 0.87);
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: center;
     position: fixed;
     width: 100%;
     margin: auto;
+    z-index: 1;
     // border: 5px solid rgba(13, 156, 85, 0.712);
 
     .title {
@@ -58,7 +59,7 @@ export default {
         background-color: hsla(195, 53%, 14%, 0.549);
         display: flex;
         align-items: center;
-        justify-content: space-around;
+        justify-content: center;
         position: fixed;
         width: 100%;
         margin: auto;
