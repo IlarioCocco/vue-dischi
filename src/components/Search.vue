@@ -4,15 +4,15 @@
 
             <button type="submit" class="buttonUno" 
                 @click.prevent="$emit('filter', searchGenre)">
-                search
+                Genre
             </button>
 
-            <input class="ricerca" type="text" placeholder="Searh Genre" 
+            <input class="ricerca" type="text" placeholder="Search Music" 
             v-model="searchGenre">
 
             <button class="buttonDue"
                 @click.prevent="reset">
-                reset
+                Cancel
             </button>
         </form>
     </main>
