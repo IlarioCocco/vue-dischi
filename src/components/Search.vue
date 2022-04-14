@@ -59,7 +59,7 @@ export default {
     border-radius: 5px;
     color: white;
     // background-color: rgb(71, 174, 71);
-    background-color: rgb(82, 98, 82);
+    background-color: rgb(63, 119, 63);
     display: none;
     justify-content: center;
     margin: 10px;
