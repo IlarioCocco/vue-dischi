@@ -55,17 +55,17 @@ export default {
     // top: 10%;
     // left: 30%;
     // transform: translate(-50%, -50%);
-    border: 3px solid rgba(255, 255, 255, 0);
+    border: 4px solid rgba(255, 255, 255, 0);
     border-radius: 5px;
     color: white;
-    background-color: rgb(153, 213, 153);
+    background-color: rgb(71, 174, 71);
     display: none;
     justify-content: center;
     margin: 10px;
 
     &:hover.buttonUno {
-        background-color: rgb(72, 183, 109);
-        border: 2px solid rgba(0, 88, 22, 0.33);
+        background-color: rgb(71, 196, 113);
+        border: 3px solid rgb(0, 153, 38);
         font-weight: bold;
         // text-transform: uppercase;
     }
@@ -73,11 +73,11 @@ export default {
 
 .buttonDue {
     // left: 70%;
-    background-color: rgba(103, 145, 243, 0.548);
+    background-color: rgb(53, 101, 213);
 
     &:hover.buttonDue {
         background-color: rgb(98, 160, 215);
-        border: 2px solid rgba(0, 20, 133, 0.239);
+        border: 3px solid rgb(26, 97, 210);
         font-weight: bold;
         // text-transform: uppercase;
     }
