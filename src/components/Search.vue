@@ -4,7 +4,7 @@
 
             <button type="submit" class="buttonUno" 
                 @click.prevent="$emit('filter', searchGenre)">
-                Genre
+                Genre <i class="fa-solid fa-music"></i>
             </button>
 
             <input class="ricerca" type="text" placeholder="Search Music" 
@@ -12,7 +12,7 @@
 
             <button class="buttonDue"
                 @click.prevent="reset">
-                Cancel
+                Cancel <i class="fa-solid fa-eject"></i>
             </button>
         </form>
     </main>
@@ -96,7 +96,7 @@ export default {
     display: none;
     width: 30%;
     text-align: center;
-    color: green;
+    color: rgb(0, 229, 0);
     margin: 10px;
 
     &:hover.ricerca {
@@ -106,6 +106,10 @@ export default {
         color: rgb(255, 255, 255);
         text-transform: uppercase;
     }
+}
+
+.fa-solid {
+    padding-left: 5px ;
 }
 
 //-------------------RESPONSIVE WITHOUT FRAMEWORK---------------------//
