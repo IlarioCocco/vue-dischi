@@ -138,27 +138,6 @@ section {
         margin: 10px;
         justify-content: center;
         border: 5px solid hsla(196, 60%, 61%, 0.116);
-
-            .img {
-                width: 100%;
-                padding: 0px 0px 10px 0px; 
-            }
-
-            .titolo {
-                text-align: center;
-                color: white;
-                // border: 5px solid rgba(255, 255, 255, 0.219);
-                max-width: 100%;
-            }
-        }
-
-        .album {
-            font-size: 20px;
-            color: rgb(223, 223, 223);
-        }
-
-    .artist {
-        color:grey;     
         }
     }
 }
@@ -188,27 +167,6 @@ section {
         margin: 10px;
         justify-content: center;
         border: 5px solid hsla(196, 60%, 61%, 0.116);
-
-            .img {
-                width: 100%;
-                padding: 0px 0px 10px 0px; 
-            }
-
-            .titolo {
-                text-align: center;
-                color: white;
-                // border: 5px solid rgba(255, 255, 255, 0.219);
-                max-width: 100%;
-            }
-        }
-
-        .album {
-            font-size: 20px;
-            color: rgb(223, 223, 223);
-        }
-
-    .artist {
-        color:grey;     
         }
     }
 }
@@ -239,26 +197,26 @@ section {
         justify-content: center;
         border: 5px solid hsla(196, 60%, 61%, 0.116);
 
-            .img {
-                width: 100%;
-                padding: 0px 0px 10px 0px; 
-            }
+    //         .img {
+    //             width: 100%;
+    //             padding: 0px 0px 10px 0px; 
+    //         }
 
-            .titolo {
-                text-align: center;
-                color: white;
-                // border: 5px solid rgba(255, 255, 255, 0.219);
-                max-width: 100%;
-            }
-        }
+    //         .titolo {
+    //             text-align: center;
+    //             color: white;
+    //             // border: 5px solid rgba(255, 255, 255, 0.219);
+    //             max-width: 100%;
+    //         }
+    //     }
 
-        .album {
-            font-size: 20px;
-            color: rgb(223, 223, 223);
-        }
+    //     .album {
+    //         font-size: 20px;
+    //         color: rgb(223, 223, 223);
+    //     }
 
-    .artist {
-        color:grey;     
+    // .artist {
+    //     color:grey;     
         }
     }
 }
