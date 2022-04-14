@@ -49,7 +49,7 @@ export default {
 }
 .buttonUno, .buttonDue {
     display: flex;
-    padding: 10px 30px 10px 30px;
+    padding: 5px 30px 5px 30px;
     // margin-top: 55px;
     // position: absolute;
     // top: 10%;
@@ -85,7 +85,7 @@ export default {
 
 .ricerca {
     display: flex;
-    padding: 10px 30px 10px 30px;
+    padding: 5px 30px 5px 30px;
     // margin-top: 55px;
     // position: absolute;
     // top: 10%;
