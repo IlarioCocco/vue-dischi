@@ -87,7 +87,7 @@ export default {
 main {
     padding: 0px 0px 0px 0px;
     // border: 5px solid hsl(196, 53%, 14%);
-    background-color: rgb(48, 48, 48);
+    background-color: rgb(37, 37, 37);
 }
 
 section {

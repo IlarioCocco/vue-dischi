@@ -98,11 +98,11 @@ export default {
     display: none;
     width: 30%;
     text-align: center;
-    color: rgb(0, 229, 0);
+    color: rgb(0, 174, 93);
     margin: 10px;
 
     &:hover.ricerca {
-        background-color: rgba(67, 77, 68, 0.254);
+        background-color: rgba(36, 58, 90, 0.254);
     }
         &.ricerca::placeholder {
         color: rgb(255, 255, 255);
