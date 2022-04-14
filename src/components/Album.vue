@@ -8,6 +8,9 @@
             <p class="artist">{{albums.author}}<br>
                 {{albums.year}}
             </p>
+            <h6 class="genre">
+                {{albums.genre}}
+            </h6>
         </div>
     </div>
 </template>
@@ -27,8 +30,14 @@ export default {
 .img {
     width: 100%;
     padding: 0px 0px 10px 0px; 
+    cursor: pointer;
     // position: relative;
     // clip-path: inset(0% 0% 0% 0%);
+
+    &.img:hover {
+        padding: 2px 2px 12px 2px; 
+        filter: brightness(70%);
+    }
 }
 
 .titolo {
@@ -41,10 +50,20 @@ export default {
 .album {
     font-size: 20px;
     color: rgb(255, 255, 255);
+   
 }
 
 .artist {
-color:rgb(87, 87, 87);     
+    color:rgb(123, 123, 123);
+}
+
+.genre {
+    color:rgb(149, 105, 17);
+
+    &.genre:hover {
+            color:rgb(244, 231, 205);
+            cursor: pointer; 
+    }
 }
 </style>
 

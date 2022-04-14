@@ -18,8 +18,8 @@ export default {
 
 <style lang="scss" scoped>
 section {
-    background-color: rgba(0, 0, 0, 0.692);
-    padding: 30px;
+    background-color: rgba(0, 0, 0, 0.907);
+    padding: 40px;
     color: rgb(106, 212, 106);
 }
 

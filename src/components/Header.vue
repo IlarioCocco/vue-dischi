@@ -21,7 +21,7 @@ export default {
 
 <style scoped lang="scss">
 .header {
-    background-color: hsla(196, 53%, 14%, 0.87);
+    background-color: hsl(196, 53%, 14%);
     display: flex;
     align-items: center;
     justify-content: center;

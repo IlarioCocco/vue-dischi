@@ -1,11 +1,20 @@
 <template>
     <main>
-        <div class="box">
-            <button class="buttonUno">search</button>
-            <input class="ricerca" type="text" placeholder="Searh Genre" v-model="searchGenre"
-            @keyup.enter="$emit('franco', searchGenre)">
-            <button class="buttonDue">reset</button>
-        </div>
+        <form class="box">
+
+            <button type="submit" class="buttonUno" 
+                @click.prevent="$emit('filter', searchGenre)">
+                search
+            </button>
+
+            <input class="ricerca" type="text" placeholder="Searh Genre" 
+            v-model="searchGenre">
+
+            <button class="buttonDue"
+                @click.prevent="reset">
+                reset
+            </button>
+        </form>
     </main>
 </template>
 
@@ -16,19 +25,27 @@ export default {
         return{
             searchGenre: ""
         }
-        
+    },
+
+    methods: {
+        reset() {
+            this.searchGenre = "";
+            this.$emit('filter', "");
+        }
     }
+
 }
 </script>
 
 <style scoped lang="scss">
 .box{
-    max-width: 80%;
+    max-width: 100%;
     margin:auto;
     // border: 5px solid rgb(255, 0, 0);
     display: flex;
     justify-content: center;
     padding: 110px 10px 20px 10px;
+    background: linear-gradient(#224787, #ffffff00);
 }
 .buttonUno, .buttonDue {
     display: flex;
@@ -38,19 +55,17 @@ export default {
     // top: 10%;
     // left: 30%;
     // transform: translate(-50%, -50%);
-    border: 3px solid rgb(255, 255, 255);
+    border: 3px solid rgba(255, 255, 255, 0);
     border-radius: 5px;
     color: white;
     background-color: rgb(153, 213, 153);
     display: none;
     justify-content: center;
     margin: 10px;
-  
-
 
     &:hover.buttonUno {
         background-color: rgb(72, 183, 109);
-        border: 2px solid rgb(0, 88, 22);
+        border: 2px solid rgba(0, 88, 22, 0.33);
         font-weight: bold;
         // text-transform: uppercase;
     }
@@ -62,7 +77,7 @@ export default {
 
     &:hover.buttonDue {
         background-color: rgb(98, 160, 215);
-        border: 2px solid rgb(0, 20, 133);
+        border: 2px solid rgba(0, 20, 133, 0.239);
         font-weight: bold;
         // text-transform: uppercase;
     }
@@ -76,7 +91,7 @@ export default {
     // top: 10%;
     // left: 50.4%;
     // transform: translate(-50%, -50%);
-    border: 1px solid rgba(4, 231, 4, 0.352);
+    border: none;
     border-radius: 5px;
     display: none;
     width: 30%;
