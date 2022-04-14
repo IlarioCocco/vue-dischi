@@ -58,7 +58,8 @@ export default {
     border: 4px solid rgba(255, 255, 255, 0);
     border-radius: 5px;
     color: white;
-    background-color: rgb(71, 174, 71);
+    // background-color: rgb(71, 174, 71);
+    background-color: rgb(82, 98, 82);
     display: none;
     justify-content: center;
     margin: 10px;
@@ -73,7 +74,8 @@ export default {
 
 .buttonDue {
     // left: 70%;
-    background-color: rgb(53, 101, 213);
+    // background-color: rgb(53, 101, 213);
+    background-color: rgb(68, 77, 100);
 
     &:hover.buttonDue {
         background-color: rgb(98, 160, 215);
