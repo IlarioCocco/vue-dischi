@@ -1,7 +1,7 @@
 <template>
     <main>
         <form>
-            <Search @filter="searchComics"/>
+            <Search @filter="searchGenre"/>
         </form>
         <section> 
             <div class="square" v-for="(todo, i) in musicaFilter" :key="i"> 
@@ -66,7 +66,7 @@ export default {
     // },
 
     methods: {
-        searchComics(info) {
+        searchGenre(info) {
            this.filter = info;
         }
     },

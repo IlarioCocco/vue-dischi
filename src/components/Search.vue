@@ -100,14 +100,24 @@ export default {
     text-align: center;
     color: rgb(0, 174, 93);
     margin: 10px;
+    text-transform: uppercase;
+
+
 
     &:hover.ricerca {
         background-color: rgba(36, 58, 90, 0.254);
     }
         &.ricerca::placeholder {
-        color: rgb(255, 255, 255);
+        color: rgba(255, 255, 255, 0.228);
         text-transform: uppercase;
     }
+}
+
+input:focus{
+outline:none;
+background-color: rgba(0, 30, 44, 0.692);
+text-transform: uppercase;
+cursor: pointer;
 }
 
 .fa-solid {
